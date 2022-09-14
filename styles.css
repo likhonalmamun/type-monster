@@ -33,7 +33,6 @@ body {
   );
   backdrop-filter: blur(5px);
   margin: 30px auto;
-
 }
 
 #display {
@@ -147,19 +146,21 @@ button {
 }
 
 #histories {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
 }
 
 .card {
+  text-align: center;
+  flex-direction: column;
   width: 100%;
-  height: 100%;
-  padding: 50px;
+  height: auto;
+  padding: 25px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 20px 30px;
+  /* padding: 20px 30px; */
   color: white;
   border-radius: 15px;
   background: rgb(255, 255, 255);
@@ -169,7 +170,6 @@ button {
     rgba(255, 255, 255, 0.05) 99.85%
   );
   backdrop-filter: blur(5px);
-  margin-bottom: 30px;
 }
 
 #modal-background {
@@ -188,18 +188,30 @@ button {
 #close-result {
   margin-top: 30px;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1150px) {
+  .box-container {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 970px) and (min-width: 575px) {
+  #histories {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .box-container {
     padding: 0 20px;
-    width: 100%;
+    width: 95%;
   }
-  .card {
-    flex-direction: column;
-  }
-  #result{
+}
+@media only screen and (max-width: 575px) {
+  #result {
     width: 80%;
   }
   #close-result {
-   width: 75%;
+    width: 75%;
+  }
+  #histories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }

@@ -44,10 +44,14 @@ const typeController = (e) => {
   const newLetterCorrect = validate(newLetter);
 
   if (newLetterCorrect) {
-    display.innerHTML += `<span class="green">${newLetter === " " ? "▪" : newLetter}</span>`;
+    display.innerHTML += `<span class="green">${
+      newLetter === " " ? "▪" : newLetter
+    }</span>`;
   } else {
-    display.innerHTML += `<span class="red">${newLetter === " " ? "▪" : newLetter}</span>`;
-    errorCount++
+    display.innerHTML += `<span class="red">${
+      newLetter === " " ? "▪" : newLetter
+    }</span>`;
+    errorCount++;
   }
   // check if given question text is equal to user typed text
   if (questionText === userText) {
@@ -69,7 +73,7 @@ const gameOver = () => {
   // so total time taken is current time - start time
   const finishTime = new Date().getTime();
   const timeTaken = (finishTime - startTime) / 1000;
-  const timetaken = parseInt(timeTaken)
+  const timetaken = parseInt(timeTaken);
   // show result modal
   resultModal.innerHTML = "";
   resultModal.classList.toggle("hidden");
@@ -135,11 +139,9 @@ displayHistory();
 setInterval(() => {
   const currentTime = new Date().getTime();
   const timeSpent = (currentTime - startTime) / 1000;
-  const timespent = parseInt(timeSpent)
+  const timespent = parseInt(timeSpent);
 
-
-
-
-
-  document.getElementById("show-time").innerHTML = `${startTime ? timespent : 0} seconds`;
+  document.getElementById("show-time").innerHTML = `${
+    startTime ? timespent : 0
+  } seconds`;
 }, 1000);
