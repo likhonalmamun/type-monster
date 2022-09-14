@@ -138,5 +138,8 @@ setInterval(() => {
   const timespent = parseInt(timeSpent)
 
 
+
+
+  
   document.getElementById("show-time").innerHTML = `${startTime ? timespent : 0} seconds`;
 }, 1000);
