@@ -83,7 +83,7 @@ const gameOver = () => {
     <h1>Finished!</h1>
     <p>You took: <span class="bold">${timetaken}</span> seconds</p>
     <p>You made <span class="bold red">${errorCount}</span> mistakes</p>
-    <button onclick="closeModal()">Close</button>
+    <button id='close-result' onclick="closeModal()">Close</button>
   `;
 
   addHistory(questionText, timeTaken, errorCount);
@@ -140,6 +140,6 @@ setInterval(() => {
 
 
 
-  
+
   document.getElementById("show-time").innerHTML = `${startTime ? timespent : 0} seconds`;
 }, 1000);

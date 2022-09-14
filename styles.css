@@ -17,7 +17,8 @@ body {
 }
 
 #question {
-  height: 100px;
+  padding: 20px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,20 +32,23 @@ body {
     rgba(255, 255, 255, 0.05) 99.85%
   );
   backdrop-filter: blur(5px);
-  margin-bottom: 30px;
+  margin: 30px auto;
+
 }
 
 #display {
-  height: 100px;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding-left: 5rem;
+  /* padding-left: 5rem; */
   color: white;
   font-size: 32px;
   background-color: #171717;
   border: 2px solid #9dffad;
   border-radius: 15px;
+  text-align: center;
+  padding: 3rem;
 }
 
 #countdown {
@@ -65,7 +69,7 @@ body {
   position: fixed;
   /* fixed result position  */
   top: 50%;
-    left: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   height: 250px;
   width: 400px;
@@ -76,7 +80,7 @@ body {
   text-align: center;
   padding: 2rem;
 }
-#show-time{
+#show-time {
   text-align: center;
   color: white;
   margin: 10px 0;
@@ -181,7 +185,9 @@ button {
   position: fixed;
   top: 0;
 }
-
+#close-result {
+  margin-top: 30px;
+}
 @media only screen and (max-width: 700px) {
   .box-container {
     padding: 0 20px;
@@ -189,5 +195,11 @@ button {
   }
   .card {
     flex-direction: column;
+  }
+  #result{
+    width: 80%;
+  }
+  #close-result {
+   width: 75%;
   }
 }
