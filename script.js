@@ -83,9 +83,14 @@ const gameOver = () => {
   // make it inactive
   display.classList.add("inactive");
   // show result
+  let textLength = parseFloat(questionText.length);
+  let wordCount = textLength / 5;
+  let WPS = wordCount / timeTaken;
+  let WPM = parseInt(WPS * 60);
   resultModal.innerHTML += `
     <h1>Finished!</h1>
     <p>You took: <span class="bold">${timetaken}</span> seconds</p>
+    <p>Your typing speed is: <span class="bold green">${WPM}</span> WPM</p>
     <p>You made <span class="bold red">${errorCount}</span> mistakes</p>
     <button id='close-result' onclick="closeModal()">Close</button>
   `;
