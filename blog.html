@@ -33,7 +33,8 @@
       border: 5px solid beige;
       padding: 3%;
       font-weight: 400;
-
+      text-align: center;
+      border-radius: 15px;
     }
 
     h1 {
@@ -65,8 +66,27 @@
   <h1 class="title"><img src="./logo.png" /></h1>
   <div class="blog-container">
     <div class="box">
-      <h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      <h1 class="red">Question 1 :</h1>
+      <h1 class="green">
+        What are the defferences between Localstorage and Sessionstorage ?
+      </h1>
+      <p>
+        Localstorage and Sessionstorage are almost similar . But there is some differences between them .
+        The most important difference is the Sessionstorage is session based , so it clears itself on closing the tab or
+        browser . But the Localstorage dosen't expire on closing the tab , window or browser . It stay saved in your
+        local storage so you can access them when you return to browser .
+        You can also modify or delete them mannualy .
+        Sessionstorage persists untill you close the tab , window or browser .(It is unchanged on reload).
+        But Localstorage persists untill the user mannualy clears it from browser.
+        The other difference is Localstorage can store up to 10MB of data which is equal to 5 Millions of charecters .
+        On the other hand , the local storage can store up to 5MB of data which is equal to 2.5 Millions of
+        charecters.(As both of them stores data in string format)
+      </p>
+    </div>
+    <div class="box">
+      <h1 class="red">Question 2 :</h1>
+      <h1 class="green">
+        What are the defferences between Globalscope and blockscope varriable ?
       </h1>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat cum inventore repellendus facilis et eum
         quibusdam! Eum, tempora nemo labore accusamus vel repellendus itaque quae tenetur doloremque et laudantium
@@ -78,8 +98,9 @@
       </p>
     </div>
     <div class="box">
-      <h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      <h1 class="red">Question 3 :</h1>
+      <h1 class="green">
+        How does event loop work in JS ?
       </h1>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat cum inventore repellendus facilis et eum
         quibusdam! Eum, tempora nemo labore accusamus vel repellendus itaque quae tenetur doloremque et laudantium
@@ -91,8 +112,9 @@
       </p>
     </div>
     <div class="box">
-      <h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      <h1 class="red">Question 4 :</h1>
+      <h1 class="green">
+        What are the causes for getting undefined value of any varriable ?
       </h1>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat cum inventore repellendus facilis et eum
         quibusdam! Eum, tempora nemo labore accusamus vel repellendus itaque quae tenetur doloremque et laudantium
@@ -103,19 +125,7 @@
         voluptatibus. Ipsa, distinctio praesentium autem quo dolorem magnam debitis hic molestias reprehenderit!
       </p>
     </div>
-    <div class="box">
-      <h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      </h1>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat cum inventore repellendus facilis et eum
-        quibusdam! Eum, tempora nemo labore accusamus vel repellendus itaque quae tenetur doloremque et laudantium
-        inventore architecto, omnis porro, doloribus enim delectus temporibus quam
-        in mollitia cumque accusantium
-        voluptatibus. Ipsa, distinctio praesentium autem quo dolorem magnam debitis hic molestias reprehenderit!
-        in mollitia cumque accusantium
-        voluptatibus. Ipsa, distinctio praesentium autem quo dolorem magnam debitis hic molestias reprehenderit!
-      </p>
-    </div>
+
 
   </div>
 
