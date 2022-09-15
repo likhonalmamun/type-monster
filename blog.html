@@ -68,7 +68,7 @@
     <div class="box">
       <h1 class="red">Question 1 :</h1>
       <h1 class="green">
-        What are the defferences between Localstorage and Sessionstorage ?
+        What are the differences between Localstorage and Sessionstorage ?
       </h1>
       <p>
         Localstorage and Sessionstorage are almost similar . But there is some differences between them .
@@ -86,15 +86,18 @@
     <div class="box">
       <h1 class="red">Question 2 :</h1>
       <h1 class="green">
-        What are the defferences between Globalscope and blockscope varriable ?
+        What are the differences between Global scope and block scope varriable ?
       </h1>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat cum inventore repellendus facilis et eum
-        quibusdam! Eum, tempora nemo labore accusamus vel repellendus itaque quae tenetur doloremque et laudantium
-        inventore architecto, omnis porro, doloribus enim delectus temporibus quam
-        in mollitia cumque accusantium
-        voluptatibus. Ipsa, distinctio praesentium autem quo dolorem magnam debitis hic molestias reprehenderit!
-        in mollitia cumque accusantium
-        voluptatibus. Ipsa, distinctio praesentium autem quo dolorem magnam debitis hic molestias reprehenderit!
+      <p>
+        The variables which can be accessed everywhere in the code are called global scope varriable .
+        And the varriables which can be accessed only in the range of particullar block(like if-else block , loop block
+        , functional block etc.) are called block scope varriable.
+        The varriable declared with var is global scoped varriable .(It's value will be undefined if you try to access
+        it before initialized)
+        On the other hand , the varriables declared with let or const are block scoped varriable.
+        You can access a global scoped varriable anywhere in the code as well as in any block.
+        But you can access a block scoped only in the particullar block where it is defined. (If it is declared outside
+        of all blocks , it can be accessed everywhere.)
       </p>
     </div>
     <div class="box">
@@ -102,13 +105,17 @@
       <h1 class="green">
         How does event loop work in JS ?
       </h1>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat cum inventore repellendus facilis et eum
-        quibusdam! Eum, tempora nemo labore accusamus vel repellendus itaque quae tenetur doloremque et laudantium
-        inventore architecto, omnis porro, doloribus enim delectus temporibus quam
-        in mollitia cumque accusantium
-        voluptatibus. Ipsa, distinctio praesentium autem quo dolorem magnam debitis hic molestias reprehenderit!
-        in mollitia cumque accusantium
-        voluptatibus. Ipsa, distinctio praesentium autem quo dolorem magnam debitis hic molestias reprehenderit!
+      <p>
+        JavaScript is a single threaded programming language . That means it can run a single operation at a time . It's
+        true about syncronous operations. It blocks next operations untill it is exicuted.
+        But there is some asyncronous operations in js that dosen't block other operations.
+        The event loop is a constantly running procces that manages these syncronous and asyncronous operations and
+        prevents the code engine from being blocked by a single task.
+        The event loop pushes syncronous operations in call stack and the asyncronous operations to task queue.
+        It exicute the operations from call stack one by one and paralally works on the asyncronous tasks.
+        When the asyncronous operation is done , event loop waits for the call stack to be cleared . If the call stack
+        is cleared , it pushes the asyncronous operation to call stack and the operation exicutes.
+        That's how event loop works in JS and makes code faster .
       </p>
     </div>
     <div class="box">
@@ -116,13 +123,20 @@
       <h1 class="green">
         What are the causes for getting undefined value of any varriable ?
       </h1>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat cum inventore repellendus facilis et eum
-        quibusdam! Eum, tempora nemo labore accusamus vel repellendus itaque quae tenetur doloremque et laudantium
-        inventore architecto, omnis porro, doloribus enim delectus temporibus quam
-        in mollitia cumque accusantium
-        voluptatibus. Ipsa, distinctio praesentium autem quo dolorem magnam debitis hic molestias reprehenderit!
-        in mollitia cumque accusantium
-        voluptatibus. Ipsa, distinctio praesentium autem quo dolorem magnam debitis hic molestias reprehenderit!
+      <p>
+        From the cases below , you might get undefined : <br>
+
+        1. variable which is declared but value is not initialized. <br>
+        2. function with out return statment. <br>
+        3. the parameter which is not passed while calling a function. <br>
+        4. function which do not have anything on right side of return. <br>
+        5. property which dosen't exist in an object. <br>
+        6. value of element out of index range in an array. <br>
+        7. value of deleted element of an array. <br>
+        8. varriable declared with var when it is accessed before initialized. <br>
+        (Last but not the least)
+        9. if you set the value of any varriable to undefined <br>
+
       </p>
     </div>
 
