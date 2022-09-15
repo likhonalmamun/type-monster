@@ -82,11 +82,12 @@ const gameOver = () => {
   display.innerHTML = "";
   // make it inactive
   display.classList.add("inactive");
-  // show result
+  // test speed (with the standard 5 charecters == 1 word )
   let textLength = parseFloat(questionText.length);
   let wordCount = textLength / 5;
   let WPS = wordCount / timeTaken;
   let WPM = parseInt(WPS * 60);
+  // show result
   resultModal.innerHTML += `
     <h1>Finished!</h1>
     <p>You took: <span class="bold">${timetaken}</span> seconds</p>
